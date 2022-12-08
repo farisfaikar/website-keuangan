@@ -21,6 +21,7 @@
                     <th scope="col">No.</th>
                     <th scope="col">Nama Bank</th>
                     <th scope="col">Kode Bank</th>
+                    <th scope="col">Aksi</th>
                 </tr>
             </thead>
             <tbody>

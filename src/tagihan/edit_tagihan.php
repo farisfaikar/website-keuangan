@@ -55,15 +55,15 @@ while ($data = mysqli_fetch_array($result)) {
                 <table width="50%" border="0">
                     <tr>
                         <td>NIM</td>
-                        <td><input type="text" name="nim" value=<?php echo $nim; ?>></td>
+                        <td><input type="text" name="nim" value="<?php echo $nim; ?>"></td>
                     </tr>
                     <tr>
                         <td>Nominal</td>
-                        <td><input type="text" name="nominal" value=<?php echo $nominal; ?>></td>
+                        <td><input type="text" name="nominal" value="<?php echo $nominal; ?>"></td>
                     </tr>
                     <tr>
                         <td>Kode Bank</td>
-                        <td><input type="text" name="kode_golongan" value=<?php echo $kode_golongan; ?>></td>
+                        <td><input type="text" name="kode_golongan" value="<?php echo $kode_golongan; ?>"></td>
                     </tr>
                     <td><input class="btn btn-success" type="submit" name="update" value="Update Data"></td>
                     </tr>

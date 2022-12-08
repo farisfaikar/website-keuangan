@@ -52,11 +52,11 @@ while ($data = mysqli_fetch_array($result)) {
                 <table width="50%" border="0">
                     <tr>
                         <td>Nama Bank</td>
-                        <td><input type="text" name="nama_bank" value=<?php echo $nama_bank; ?>></td>
+                        <td><input type="text" name="nama_bank" value="<?php echo $nama_bank; ?>"></td>
                     </tr>
                     <tr>
                         <td>kode_bank</td>
-                        <td><input type="text" name="kode_bank" value=<?php echo $kode_bank; ?>></td>
+                        <td><input type="text" name="kode_bank" value="<?php echo $kode_bank; ?>"></td>
                     </tr>
                     <td></td>
                     <td><input class="btn btn-success" type="submit" name="update" value="Update Data"></td>

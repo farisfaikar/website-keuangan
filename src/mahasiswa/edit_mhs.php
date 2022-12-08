@@ -64,27 +64,27 @@ while ($data = mysqli_fetch_array($result)) {
                 <table width="50%" border="0">
                     <tr>
                         <td>NIM</td>
-                        <td><input type="text" name="nim" value=<?php echo $nim; ?>></td>
+                        <td><input type="text" name="nim" value="<?php echo $nim; ?>"></td>
                     </tr>
                     <tr>
                         <td>Nama</td>
-                        <td><input type="text" name="nama" value=<?php echo $nama; ?>></td>
+                        <td><input type="text" name="nama" value="<?php echo $nama; ?>"></td>
                     </tr>
                     <tr>
                         <td>Prodi</td>
-                        <td><input type="text" name="prodi" value=<?php echo $prodi; ?>></td>
+                        <td><input type="text" name="prodi" value="<?php echo $prodi; ?>"></td>
                     </tr>
                     <tr>
                         <td>Angkatan</td>
-                        <td><input type="number" name="angkatan" value=<?php echo $angkatan; ?>></td>
+                        <td><input type="number" name="angkatan" value="<?php echo $angkatan; ?>"></td>
                     </tr>
                     <tr>
                         <td>Email</td>
-                        <td><input type="text" name="email" value=<?php echo $email; ?>></td>
+                        <td><input type="text" name="email" value="<?php echo $email; ?>"></td>
                     </tr>
                     <tr>
                         <td>Alamat</td>
-                        <td><input type="text" name="alamat" value=<?php echo $alamat; ?>></td>
+                        <td><input type="text" name="alamat" value="<?php echo $alamat; ?>"></td>
                     </tr>
                     <td></td>
                     <td><input class="btn btn-success" type="submit" name="update" value="Update Data"></td>
