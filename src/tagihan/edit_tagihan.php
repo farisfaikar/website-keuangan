@@ -111,22 +111,22 @@ https://templatemo.com/tm-581-kind-heart-charity
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <form action="create_tagihan.php" method="post" name="form1">
+                            <form action="edit_tagihan.php" method="post" name="form1">
                                 <h4>Edit Tagihan</h4>
                                 <div class="form-group">
-                                    <label for="inputNim">NIM</label>
+                                    <label>NIM</label>
                                     <input type="text" class="form-control" placeholder="Masukkan NIM" name="nim" value="<?php echo $nim; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputNominal">Nominal</label>
-                                    <input type="number" class="form-control" placeholder="Masukkan Nominal" name="nominal" value="<?php echo $nominal; ?>">
+                                    <label>Nominal</label>
+                                    <input type="text" class="form-control" placeholder="Masukkan Nominal" name="nominal" value="<?php echo $nominal; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputKodeGolongan">Kode Golongan</label>
+                                    <label>Kode Golongan</label>
                                     <input type="text" class="form-control" placeholder="Masukkan Kode Golongan" name="kode_golongan" value="<?php echo $kode_golongan; ?>">
                                 </div>
                                 <br>
-                                <input class="btn btn-success" type="submit" name="Submit" value="Update Data">
+                                <input class="btn btn-success" type="submit" name="update" value="Update Data">
                                 <br>
                                 <a href="../../tagihan.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Kembali</a>
                             </form>
