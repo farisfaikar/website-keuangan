@@ -29,7 +29,7 @@ https://templatemo.com/tm-581-kind-heart-charity
 <body id="section_1">
     <nav class="navbar navbar-expand-lg bg-light shadow-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="home.php">
                 <img src="images/logo.png" class="logo img-fluid" alt="Database Keuangan">
                 <span>
                     Database Keuangan
@@ -44,24 +44,24 @@ https://templatemo.com/tm-581-kind-heart-charity
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#top">Home</a>
+                <li class="nav-item">
+                        <a class="nav-link click-scroll" href="home.php">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_2">Mahasiswa</a>
+                        <a class="nav-link click-scroll" href="mahasiswa.php">Mahasiswa</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_3">Tagihan</a>
+                        <a class="nav-link click-scroll" href="tagihan.php">Tagihan</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_4">Pembayaran</a>
+                        <a class="nav-link click-scroll" href="pembayaran.php">Pembayaran</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_5">Bank</a>
+                        <a class="nav-link click-scroll" href="bank.php">Bank</a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +79,7 @@ https://templatemo.com/tm-581-kind-heart-charity
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                         <div class="featured-block d-flex justify-content-center align-items-center">
-                            <a href="donate.html" class="d-block">
+                            <a href="mahasiswa.php" class="d-block">
                                 <img src="images/icons/hands.png" class="featured-block-image img-fluid" alt="">
 
                                 <p class="featured-block-text">Tabel <strong>Mahasiswa</strong></p>
@@ -99,7 +99,7 @@ https://templatemo.com/tm-581-kind-heart-charity
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
                         <div class="featured-block d-flex justify-content-center align-items-center">
-                            <a href="donate.html" class="d-block">
+                            <a href="pembayaran.php" class="d-block">
                                 <img src="images/icons/receive.png" class="featured-block-image img-fluid" alt="">
 
                                 <p class="featured-block-text">Tabel <strong>Pembayaran</strong></p>
@@ -109,7 +109,7 @@ https://templatemo.com/tm-581-kind-heart-charity
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                         <div class="featured-block d-flex justify-content-center align-items-center">
-                            <a href="donate.html" class="d-block">
+                            <a href="bank.php" class="d-block">
                                 <img src="images/icons/scholarship.png" class="featured-block-image img-fluid" alt="">
 
                                 <p class="featured-block-text">Tabel <strong>Bank</strong></p>

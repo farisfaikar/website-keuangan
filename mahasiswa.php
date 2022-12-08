@@ -28,29 +28,29 @@
                 </tr>
             </thead>
             <tbody>
-                <?php
-                require 'connection.php';
-                $hasil = mysqli_query($koneksi, "SELECT * FROM tbl_mahasiswa")
-                ?>
-                <?php
-                $no = 1;
-                while ($data = mysqli_fetch_array($hasil)) {
-                    echo "<tr>";
-                    echo "<th>" . $no . "</th>";
-                    echo "<td>" . $data['nim'] . "</td>";
-                    echo "<td>" . $data['nama'] . "</td>";
-                    echo "<td>" . $data['prodi'] . "</td>";
-                    echo "<td>" . $data['angkatan'] . "</td>";
-                    echo "<td>" . $data['email'] . "</td>";
-                    echo "<td>" . $data['alamat'] . "</td>";
-                    echo "<td>
-            <a href='src/mahasiswa/edit_mhs.php?nim=$data[nim]' class='btn btn-warning btn-sm' style='font-weight: 600;'>Edit</a>|
-            <a href='src/mahasiswa/delete_mhs.php?nim=$data[nim]' class='btn btn-danger btn-sm' style='font-weight: 600;'>Delete</a>
-            </td>";
-                    echo "</tr>";
-                    $no++;
-                }
-                ?>
+                    <?php
+                    require 'connection.php';
+                    $hasil = mysqli_query($koneksi, "SELECT * FROM tbl_mahasiswa")
+                    ?>
+                    <?php
+                    $no = 1;
+                    while ($data = mysqli_fetch_array($hasil)) {
+                        echo "<tr>";
+                        echo "<th>" . $no . "</th>";
+                        echo "<td>" . $data['nim'] . "</td>";
+                        echo "<td>" . $data['nama'] . "</td>";
+                        echo "<td>" . $data['prodi'] . "</td>";
+                        echo "<td>" . $data['angkatan'] . "</td>";
+                        echo "<td>" . $data['email'] . "</td>";
+                        echo "<td>" . $data['alamat'] . "</td>";
+                        echo "<td>
+                <a href='src/mahasiswa/edit_mhs.php?nim=$data[nim]' class='btn btn-warning btn-sm' style='font-weight: 600;'>Edit</a> |
+                <a href='src/mahasiswa/delete_mhs.php?nim=$data[nim]' class='btn btn-danger btn-sm' style='font-weight: 600;'>Delete</a>
+                </td>";
+                        echo "</tr>";
+                        $no++;
+                    }
+                    ?>
             </tbody>
         </table>
     </div>
