@@ -86,7 +86,7 @@ if (isset($_POST['Submit'])) {
         <div class="col-lg-12">
           <div class="card">
             <div class="card-body">
-              <form action="create_mhs.php" method="post" name="form1">
+              <form action="create_mahasiswa.php" method="post" name="form1">
                 <h4>Tambah Mahasiswa</h4>
                 <div class="form-group" style="margin-bottom: 1em;">
                   <label for="inputNim">NIM</label>

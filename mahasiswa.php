@@ -77,7 +77,7 @@ https://templatemo.com/tm-581-kind-heart-charity
                             <h3 class="card-title" align="center" style="margin-top: 8px;"><strong>Tabel Mahasiswa</strong></h3>
                         </div>
                         <div align="left" style="padding: 1em; padding-bottom: 0;">
-                            <a href="src/mahasiswa/create_mhs.php" class="btn btn-success" role="button" aria-disabled="true">
+                            <a href="src/mahasiswa/create_mahasiswa.php" class="btn btn-success" role="button" aria-disabled="true">
                                 <i class="bi bi-plus-circle"> Tambah Mahasiswa</i></a>
                         </div>
                         <div class="card-body">
@@ -112,8 +112,8 @@ https://templatemo.com/tm-581-kind-heart-charity
                                             echo "<td>" . $data['email'] . "</td>";
                                             echo "<td>" . $data['alamat'] . "</td>";
                                             echo "<td>
-                                            <a href='src/mahasiswa/edit_mhs.php?nim=$data[nim]' class='btn btn-warning btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-pencil-square'> Edit</i></a>
-                                            <a href='src/mahasiswa/delete_mhs.php?nim=$data[nim]' class='btn btn-danger btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-trash'> Delete</i></a>
+                                            <a href='src/mahasiswa/edit_mahasiswa.php?nim=$data[nim]' class='btn btn-warning btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-pencil-square'> Edit</i></a>
+                                            <a href='src/mahasiswa/delete_mahasiswa.php?nim=$data[nim]' class='btn btn-danger btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-trash'> Delete</i></a>
                                             </td>";
                                             echo "</tr>";
                                             $no++;

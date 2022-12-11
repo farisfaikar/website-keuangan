@@ -120,7 +120,7 @@ https://templatemo.com/tm-581-kind-heart-charity
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <form action="edit_mhs.php" method="post" name="form1">
+                            <form action="edit_mahasiswa.php" method="post" name="form1">
                                 <h4>Edit Mahasiswa</h4>
                                 <div class="form-group" style="margin-bottom: 1em;">
                                     <label>NIM</label>
