@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Database Keuangan</title>
+    <title>Keuangan - Tabel Tagihan</title>
 
     <!-- CSS FILES -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -44,23 +44,23 @@ https://templatemo.com/tm-581-kind-heart-charity
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="home.php">Home</a>
+                        <a class="nav-link" href="home.php">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="mahasiswa.php">Mahasiswa</a>
+                        <a class="nav-link" href="mahasiswa.php">Mahasiswa</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="tagihan.php">Tagihan</a>
+                        <a class="nav-link active" href="tagihan.php">Tagihan</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="pembayaran.php">Pembayaran</a>
+                        <a class="nav-link" href="pembayaran.php">Pembayaran</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="bank.php">Bank</a>
+                        <a class="nav-link" href="bank.php">Bank</a>
                     </li>
                 </ul>
             </div>
@@ -68,17 +68,18 @@ https://templatemo.com/tm-581-kind-heart-charity
     </nav>
 
     <main>
-        <section class="donate-section">
+        <section class="donate-section" style="padding-top: 100px;">
             <div class="section-overlay"></div>
             <div class="container">
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title" align="center">Tabel Tagihan</h4>
+                            <h3 class="card-title" align="center" style="margin-top: 8px;"><strong>Tabel Tagihan</strong></h3>
                         </div>
-                        <div align="center">
-                            <br>
-                            <a href="src/tagihan/create_tagihan.php" class="btn btn-success" role="button" aria-disabled="true">Tambah Tagihan</a>
+                        <div align="left" style="padding: 1em; padding-bottom: 0;">
+
+                            <a href="src/tagihan/create_tagihan.php" class="btn btn-success" role="button" aria-disabled="true">
+                                <i class="bi bi-plus-circle"> Tambah Tagihan</i></a>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -106,8 +107,8 @@ https://templatemo.com/tm-581-kind-heart-charity
                                             echo "<td>" . $data['nominal'] . "</td>";
                                             echo "<td>" . $data['kode_golongan'] . "</td>";
                                             echo "<td>
-                                                <a href='src/tagihan/edit_tagihan.php?nim=$data[nim]' class='btn btn-warning btn-sm' style='font-weight: 600;'>Edit</a> |
-                                                <a href='src/tagihan/delete_tagihan.php?nim=$data[nim]' class='btn btn-danger btn-sm' style='font-weight: 600;'>Delete</a>
+                                                <a href='src/tagihan/edit_tagihan.php?nim=$data[nim]' class='btn btn-warning btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-pencil-square'> Edit</i></a>
+                                                <a href='src/tagihan/delete_tagihan.php?nim=$data[nim]' class='btn btn-danger btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-trash'> Delete</i></a>
                                                 </td>";
                                             echo "</tr>";
                                             $no++;
@@ -128,7 +129,6 @@ https://templatemo.com/tm-581-kind-heart-charity
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
-    <script src="js/click-scroll.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>
 

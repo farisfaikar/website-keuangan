@@ -45,23 +45,23 @@ https://templatemo.com/tm-581-kind-heart-charity
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                        <a class="nav-link click-scroll" href="home.php">Home</a>
+                        <a class="nav-link active" href="home.php">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="mahasiswa.php">Mahasiswa</a>
+                        <a class="nav-link" href="mahasiswa.php">Mahasiswa</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="tagihan.php">Tagihan</a>
+                        <a class="nav-link" href="tagihan.php">Tagihan</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="pembayaran.php">Pembayaran</a>
+                        <a class="nav-link" href="pembayaran.php">Pembayaran</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="bank.php">Bank</a>
+                        <a class="nav-link" href="bank.php">Bank</a>
                     </li>
                 </ul>
             </div>
@@ -72,7 +72,6 @@ https://templatemo.com/tm-581-kind-heart-charity
         <section class="section-padding">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-10 col-12 text-center mx-auto">
                         <h2 class="mb-5">Tabel-Tabel Pada Database Keuangan</h2>
                     </div>

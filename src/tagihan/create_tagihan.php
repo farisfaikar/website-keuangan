@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Keuangan - Tambah Mahasiswa</title>
+  <title>Keuangan - Tambah Tagihan</title>
 
   <!-- CSS FILES -->
   <link href="../../css/bootstrap.min.css" rel="stylesheet">
@@ -44,23 +44,23 @@ https://templatemo.com/tm-581-kind-heart-charity
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="../../home.php">Home</a>
+            <a class="nav-link" href="../../home.php">Home</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="../../mahasiswa.php">Mahasiswa</a>
+            <a class="nav-link" href="../../mahasiswa.php">Mahasiswa</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link active" href="../../tagihan.php">Tagihan</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="../../tagihan.php">Tagihan</a>
+            <a class="nav-link" href="../../pembayaran.php">Pembayaran</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="../../pembayaran.php">Pembayaran</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link click-scroll" href="../../bank.php">Bank</a>
+            <a class="nav-link" href="../../bank.php">Bank</a>
           </li>
         </ul>
       </div>
@@ -68,28 +68,27 @@ https://templatemo.com/tm-581-kind-heart-charity
   </nav>
 
   <main>
-    <section class="donate-section">
+    <section class="donate-section" style="padding-top: 100px;">
       <div class="section-overlay"></div>
       <div class="container">
         <div class="col-lg-12">
           <div class="card">
             <div class="card-body">
               <form action="create_tagihan.php" method="post" name="form1">
-                <h4>Masukkan Tagihan</h4>
-                <div class="form-group">
+                <h4>Tambah Tagihan</h4>
+                <div class="form-group" style="margin-bottom: 1em;">
                   <label for="inputNim">NIM</label>
-                  <input type="text" class="form-control" placeholder="Masukkan NIM" name="nim">
+                  <input type="text" class="form-control" placeholder="Masukkan NIM" name="nim" required="">
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="margin-bottom: 1em;">
                   <label for="inputNominal">Nominal</label>
-                  <input type="number" class="form-control" placeholder="Masukkan Nominal" name="nominal">
+                  <input type="number" class="form-control" placeholder="Masukkan Nominal" name="nominal" required="">
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="margin-bottom: 1em;">
                   <label for="inputKodeGolongan">Kode Golongan</label>
-                  <input type="text" class="form-control" placeholder="Masukkan Kode Golongan" name="kode_golongan">
+                  <input type="text" class="form-control" placeholder="Masukkan Kode Golongan" name="kode_golongan" required="">
                 </div>
-                <br>
-                <input class="btn btn-success" type="submit" name="Submit" value="Tambah Data">
+                <input class="btn btn-success" style="margin-bottom: 1em;" type="submit" name="Submit" value="Tambah Data">
                 <br>
                 <a href="../../tagihan.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Kembali</a>
               </form>
