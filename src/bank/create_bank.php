@@ -115,3 +115,5 @@ if (isset($_POST['Submit'])) {
   <script src="js/custom.js"></script>
 
 </body>
+
+</html>
