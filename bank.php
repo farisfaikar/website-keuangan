@@ -52,7 +52,7 @@ https://templatemo.com/tm-581-kind-heart-charity
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="tagihan.php">Tagihan</a>
+                        <a class="nav-link href="tagihan.php">Tagihan</a>
                     </li>
 
                     <li class="nav-item">
@@ -60,7 +60,7 @@ https://templatemo.com/tm-581-kind-heart-charity
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="bank.php">Bank</a>
+                        <a class="nav-link active" href="bank.php">Bank</a>
                     </li>
                 </ul>
             </div>
