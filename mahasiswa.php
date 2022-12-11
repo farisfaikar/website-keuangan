@@ -112,8 +112,8 @@ https://templatemo.com/tm-581-kind-heart-charity
                                             echo "<td>" . $data['email'] . "</td>";
                                             echo "<td>" . $data['alamat'] . "</td>";
                                             echo "<td>
-                                            <a href='src/mahasiswa/edit_mhs.php?nim=$data[nim]' class='btn btn-warning btn-sm' style='font-weight: 600;'><i class='bi bi-pencil-square'> Edit</i></a>
-                                            <a href='src/mahasiswa/delete_mhs.php?nim=$data[nim]' class='btn btn-danger btn-sm' style='font-weight: 600;'><i class='bi bi-trash'> Delete</i></a>
+                                            <a href='src/mahasiswa/edit_mhs.php?nim=$data[nim]' class='btn btn-warning btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-pencil-square'> Edit</i></a>
+                                            <a href='src/mahasiswa/delete_mhs.php?nim=$data[nim]' class='btn btn-danger btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-trash'> Delete</i></a>
                                             </td>";
                                             echo "</tr>";
                                             $no++;

@@ -69,7 +69,7 @@ https://templatemo.com/tm-581-kind-heart-charity
             <a class="nav-link" href="../../mahasiswa.php">Mahasiswa</a>
           </li>
 
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link active" href="../../tagihan.php">Tagihan</a>
           </li>
 
