@@ -1,3 +1,21 @@
+<?php
+// Check If form submitted, insert form data into users table.
+if (isset($_POST['Submit'])) {
+  $nim = $_POST['nim'];
+  $nominal = $_POST['nominal'];
+  $kode_golongan = $_POST['kode_golongan'];
+
+  // include database connection file
+  require '../../connection.php';
+
+  // Insert user data into table
+  $result = mysqli_query($koneksi, "INSERT INTO tbl_tagihan(nim, nominal, kode_golongan) VALUES('$nim', '$nominal', '$kode_golongan')");
+
+  // Redirect to different page
+  header("Location: ../../tagihan.php");
+}
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -92,24 +110,6 @@ https://templatemo.com/tm-581-kind-heart-charity
                 <br>
                 <a href="../../tagihan.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Kembali</a>
               </form>
-              <?php
-              // Check If form submitted, insert form data into users table.
-              if (isset($_POST['Submit'])) {
-                $nim = $_POST['nim'];
-                $nominal = $_POST['nominal'];
-                $kode_golongan = $_POST['kode_golongan'];
-
-                // include database connection file
-                require '../../connection.php';
-
-                // Insert user data into table
-                $result = mysqli_query($koneksi, "INSERT INTO tbl_tagihan(nim, nominal, kode_golongan) VALUES('$nim', '$nominal', '$kode_golongan')");
-
-                // Show message when user added
-                // echo "Data berhasil ditambahkan  <a class='btn btn-primary' href=../'../tagihan.php'>Lihat Data</a>";
-                header("Location: ../../tagihan.php");
-              }
-              ?>
             </div>
           </div>
         </div>
