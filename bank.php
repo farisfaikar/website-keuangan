@@ -105,8 +105,8 @@ https://templatemo.com/tm-581-kind-heart-charity
                                             echo "<td>" . $data['nama_bank'] . "</td>";
                                             echo "<td>" . $data['kode_bank'] . "</td>";
                                             echo "<td>
-                                                <a href='src/bank/edit_bank.php?kode_bank=$data[kode_bank]' class='btn btn-warning btn-sm' style='font-weight: 600;'>Edit</a>|
-                                                <a href='src/bank/delete_bank.php?kode_bank=$data[kode_bank]' class='btn btn-danger btn-sm' style='font-weight: 600;'>Delete</a>
+                                                <a href='src/bank/edit_bank.php?kode_bank=$data[kode_bank]' class='btn btn-warning btn-sm' style='font-weight: 600;'><i class='bi bi-pencil-square'>Edit</i></a>
+                                                <a href='src/bank/delete_bank.php?kode_bank=$data[kode_bank]' class='btn btn-danger btn-sm' style='font-weight: 600;'><i class='bi bi-trash'>Delete</i></a>
                                             </td>";
                                             echo "</tr>";
                                             $no++;
