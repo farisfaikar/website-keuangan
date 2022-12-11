@@ -44,60 +44,128 @@ while ($data = mysqli_fetch_array($result)) {
 }
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Keuangan - Edit Mahasiswa</title>
+
+    <!-- CSS FILES -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="../../css/templatemo-kind-heart-charity.css" rel="stylesheet">
+    <!--
+
+TemplateMo 581 Kind Heart Charity
+
+https://templatemo.com/tm-581-kind-heart-charity
+
+-->
+
 </head>
 
-<body>
+<body id="section_1">
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="../../home.php">
+                <img src="../../images/logo.png" class="logo img-fluid" alt="Database Keuangan">
+                <span>
+                    Database Keuangan
+                    <small>SPP Mahasiswa</small>
+                </span>
+            </a>
 
-    <div class="container">
-        <center>
-            <h3>Silahkan Masukkan Data</h3>
-            <form action="edit_mhs.php" method="post" name="form1">
-                <table width="50%" border="0">
-                    <tr>
-                        <td>NIM</td>
-                        <td><input type="text" name="nim" value="<?php echo $nim; ?>"></td>
-                    </tr>
-                    <tr>
-                        <td>Nama</td>
-                        <td><input type="text" name="nama" value="<?php echo $nama; ?>"></td>
-                    </tr>
-                    <tr>
-                        <td>Prodi</td>
-                        <td><input type="text" name="prodi" value="<?php echo $prodi; ?>"></td>
-                    </tr>
-                    <tr>
-                        <td>Angkatan</td>
-                        <td><input type="number" name="angkatan" value="<?php echo $angkatan; ?>"></td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td><input type="text" name="email" value="<?php echo $email; ?>"></td>
-                    </tr>
-                    <tr>
-                        <td>Alamat</td>
-                        <td><input type="text" name="alamat" value="<?php echo $alamat; ?>"></td>
-                    </tr>
-                    <td></td>
-                    <td><input class="btn btn-success" type="submit" name="update" value="Update Data"></td>
-                    </tr>
-                </table>
-            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <br>
-            <a href="../../mahasiswa.php" class="btn btn-primary btn-lg " tabindex="-1" role="button" aria-disabled="true">Kembali</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../home.php">Home</a>
+                    </li>
 
-        </center>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../../mahasiswa.php">Mahasiswa</a>
+                    </li>
 
-    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../tagihan.php">Tagihan</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../pembayaran.php">Pembayaran</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../bank.php">Bank</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="donate-section" style="padding-top: 100px;">
+            <div class="section-overlay"></div>
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="edit_mhs.php" method="post" name="form1">
+                                <h4>Edit Mahasiswa</h4>
+                                <div class="form-group" style="margin-bottom: 1em;">
+                                    <label>NIM</label>
+                                    <input type="text" class="form-control" placeholder="Masukkan NIM" name="nim" required value="<?php echo $nim; ?>">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 1em;">
+                                    <label>Nama</label>
+                                    <input type="text" class="form-control" placeholder="Masukkan Nama" name="nama" required value="<?php echo $nama; ?>">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 1em;">
+                                    <label>Prodi</label>
+                                    <input type="text" class="form-control" placeholder="Masukkan Prodi" name="prodi" required value="<?php echo $prodi; ?>">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 1em;">
+                                    <label>Angkatan</label>
+                                    <input type="text" class="form-control" placeholder="Masukkan Angkatan" name="angkatan" required value="<?php echo $angkatan; ?>">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 1em;">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" placeholder="Masukkan Email" name="email" required value="<?php echo $email; ?>">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 1em;">
+                                    <label>Alamat</label>
+                                    <input type="text" class="form-control" placeholder="Masukkan Alamat" name="alamat" required value="<?php echo $alamat; ?>">
+                                </div>
+                                <input class="btn btn-success" style="margin-bottom: 1em;" type="submit" name="update" value="Update Data">
+                                <br>
+                                <a href="../../mahasiswa.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Kembali</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 
