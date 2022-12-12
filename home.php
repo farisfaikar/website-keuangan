@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Database Keuangan</title>
+    <title>Keuangan - Home</title>
 
     <!-- CSS FILES -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,14 +16,15 @@
     <link href="css/bootstrap-icons.css" rel="stylesheet">
 
     <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
+
+    <link rel="icon" href="images/icons/scholarship.png">
     <!--
 
-TemplateMo 581 Kind Heart Charity
+    TemplateMo 581 Kind Heart Charity
 
-https://templatemo.com/tm-581-kind-heart-charity
+    https://templatemo.com/tm-581-kind-heart-charity
 
--->
-
+    -->
 </head>
 
 <body id="section_1">
@@ -37,14 +38,13 @@ https://templatemo.com/tm-581-kind-heart-charity
                 </span>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link active" href="home.php">Home</a>
                     </li>
 

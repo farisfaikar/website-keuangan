@@ -34,14 +34,15 @@ if (isset($_POST['Submit'])) {
   <link href="../../css/bootstrap-icons.css" rel="stylesheet">
 
   <link href="../../css/templatemo-kind-heart-charity.css" rel="stylesheet">
+
+  <link rel="icon" href="../../images/icons/scholarship.png">
   <!--
 
-TemplateMo 581 Kind Heart Charity
+  TemplateMo 581 Kind Heart Charity
 
-https://templatemo.com/tm-581-kind-heart-charity
+  https://templatemo.com/tm-581-kind-heart-charity
 
--->
-
+  -->
 </head>
 
 <body id="section_1">
