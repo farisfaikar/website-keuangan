@@ -138,21 +138,21 @@ while ($data = mysqli_fetch_array($result)) {
                                 <div class="form-group" style="margin-bottom: 1em;">
                                     <label>Status Pembayaran</label>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="stats" value="Sudah Dibayar" <?php
-                                                                                                                        if ($stats == "Sudah Dibayar") {
-                                                                                                                            echo "checked";
-                                                                                                                        }
-                                                                                                                        ?>>
+                                        <input class="form-check-input" type="radio" name="stats" value="1" <?php
+                                                                                                            if ($stats == "1") {
+                                                                                                                echo "checked";
+                                                                                                            }
+                                                                                                            ?>>
                                         <label class="form-check-label">
                                             Sudah Dibayar
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="stats" value="Belum Dibayar" <?php
-                                                                                                                        if ($stats == "Belum Dibayar") {
-                                                                                                                            echo "checked";
-                                                                                                                        }
-                                                                                                                        ?>>
+                                        <input class="form-check-input" type="radio" name="stats" value="0" <?php
+                                                                                                            if ($stats == "0") {
+                                                                                                                echo "checked";
+                                                                                                            }
+                                                                                                            ?>>
                                         <label class="form-check-label">
                                             Belum Dibayar
                                         </label>
