@@ -109,7 +109,11 @@
                                             echo "<td>" . $data['nim'] . "</td>";
                                             echo "<td>" . $data['kode_bank'] . "</td>";
                                             echo "<td>" . $data['tanggal'] . "</td>";
-                                            echo "<td>" . $data['stats'] . "</td>";
+                                            if ($data['stats'] == 0){
+                                                echo "<td><p class='center text-danger fw-semibold' align='center'>Belum Dibayar</p></td>";
+                                            } else if ($data['stats'] == 1){
+                                                echo "<td><p class='center text-success fw-semibold' align='center'>Sudah Dibayar</p></td>";
+                                            }
                                             echo "<td>
                                             <a href='src/pembayaran/edit_pembayaran.php?no_va=$data[no_va]' class='btn btn-warning btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-pencil-square'> Edit</i></a>
                                             <a href='src/pembayaran/delete_pembayaran.php?no_va=$data[no_va]' class='btn btn-danger btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-trash'> Delete</i></a>
