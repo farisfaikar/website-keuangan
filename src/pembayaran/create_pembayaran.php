@@ -108,13 +108,13 @@ if (isset($_POST['Submit'])) {
                                 <div class="form-group" style="margin-bottom: 1em;">
                                     <label>Status Pembayaran</label>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="stats" value="Sudah Dibayar">
+                                        <input class="form-check-input" type="radio" name="stats" value="1">
                                         <label class="form-check-label">
                                             Sudah Dibayar
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="stats" value="Belum Dibayar" checked>
+                                        <input class="form-check-input" type="radio" name="stats" value="0" checked>
                                         <label class="form-check-label">
                                             Belum Dibayar
                                         </label>
