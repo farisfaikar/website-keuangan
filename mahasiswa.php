@@ -68,8 +68,8 @@
         </div>
     </nav>
 
-    <main class="donate-section">
-        <section style="padding-top: 100px;">
+    <main>
+        <section class="donate-section" style="padding-top: 100px;">
             <div class="section-overlay"></div>
             <div class="container">
                 <div class="col-lg-12">
