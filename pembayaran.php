@@ -110,9 +110,9 @@
                                             echo "<td>" . $data['kode_bank'] . "</td>";
                                             echo "<td>" . $data['tanggal'] . "</td>";
                                             if ($data['stats'] == 0){
-                                                echo "<td><p class='center text-danger fw-semibold' align='center'>Belum Dibayar</p></td>";
+                                                echo "<td><p class='center text-danger fw-semibold' align='center' style='margin-bottom: 0'>Belum Dibayar</p></td>";
                                             } else if ($data['stats'] == 1){
-                                                echo "<td><p class='center text-success fw-semibold' align='center'>Sudah Dibayar</p></td>";
+                                                echo "<td><p class='center text-success fw-semibold' align='center' style='margin-bottom: 0'>Sudah Dibayar</p></td>";
                                             }
                                             echo "<td>
                                             <a href='src/pembayaran/edit_pembayaran.php?no_va=$data[no_va]' class='btn btn-warning btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-pencil-square'> Edit</i></a>
