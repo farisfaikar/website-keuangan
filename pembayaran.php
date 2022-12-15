@@ -98,7 +98,7 @@
                                     <tbody>
                                         <?php
                                         require 'connection.php';
-                                        $hasil = mysqli_query($koneksi, "SELECT * FROM tbl_pembayaran")
+                                        $hasil = mysqli_query($koneksi, "SELECT * FROM tbl_pembayaran p JOIN tbl_bank b ON p.kode_bank=b.kode_bank")
                                         ?>
                                         <?php
                                         $no = 1;
@@ -107,7 +107,7 @@
                                             echo "<th>" . $no . "</th>";
                                             echo "<td>" . $data['no_va'] . "</td>";
                                             echo "<td>" . $data['nim'] . "</td>";
-                                            echo "<td>" . $data['kode_bank'] . "</td>";
+                                            echo "<td>" . $data['nama_bank'] . "</td>";
                                             echo "<td>" . $data['tanggal'] . "</td>";
                                             if ($data['stats'] == 0){
                                                 echo "<td><p class='center text-danger fw-semibold' align='center' style='margin-bottom: 0'>Belum Dibayar</p></td>";
