@@ -89,6 +89,7 @@
                                         <tr>
                                             <th scope="col">No</th>
                                             <th scope="col">NIM</th>
+                                            <th scope="col">Nama</th>
                                             <th scope="col">Nominal</th>
                                             <th scope="col">Kode Golongan</th>
                                             <th scope="col">Aksi</th>
@@ -97,7 +98,7 @@
                                     <tbody>
                                         <?php
                                         require 'connection.php';
-                                        $hasil = mysqli_query($koneksi, "SELECT * FROM tbl_tagihan")
+                                        $hasil = mysqli_query($koneksi, "SELECT * FROM tbl_tagihan t JOIN tbl_mahasiswa m ON t.nim=m.nim")
                                         ?>
                                         <?php
                                         $no = 1;
@@ -105,6 +106,7 @@
                                             echo "<tr>";
                                             echo "<th>" . $no . "</th>";
                                             echo "<td>" . $data['nim'] . "</td>";
+                                            echo "<td>" . $data['nama'] . "</td>";
                                             echo "<td>" . $data['nominal'] . "</td>";
                                             echo "<td>" . $data['kode_golongan'] . "</td>";
                                             echo "<td>
