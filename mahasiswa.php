@@ -89,11 +89,11 @@
                                             <th scope="col">No</th>
                                             <th scope="col">NIM</th>
                                             <th scope="col">Nama</th>
-                                            <th scope="col">Prodi</th>
+                                            <th scope="col" width="210px">Prodi</th>
                                             <th scope="col">Angkatan</th>
                                             <th scope="col">Email</th>
                                             <th scope="col">Alamat</th>
-                                            <th scope="col">Aksi</th>
+                                            <th scope="col" width="188px">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
