@@ -39,6 +39,10 @@ if (isset($_POST['Submit'])) {
   <link href="../../css/templatemo-kind-heart-charity.css" rel="stylesheet">
 
   <link rel="icon" href="../../images/icons/scholarship.png">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css">
+
 </head>
 
 <body id="section_1">
@@ -103,8 +107,16 @@ if (isset($_POST['Submit'])) {
                   <input type="text" class="form-control" placeholder="Masukkan Angkatan" name="angkatan" required="">
                 </div>
                 <div class="form-group" style="margin-bottom: 1em;">
-                  <label for="inputProdi">Prodi</label>
-                  <input type="text" class="form-control" placeholder="Masukkan Prodi" name="prodi" required="">
+                  <label style="display:flex" for="inputProdi">Prodi</label>
+                  <select  id="select" class="form-select" aria-label="Default select example" name="prodi">
+                    <option value="">Masukkan Prodi</option>
+                      <?php 
+                        require 'daftar_prodi.php';
+                        for ($i = 0; $i < count($daftarProdi); $i++) {
+                          echo '<option value="' . $daftarProdi[$i] . '">' . $daftarProdi[$i] . '</option>';
+                        } 
+                      ?>
+                  </select>
                 </div>
                 <div class="form-group" style="margin-bottom: 1em;">
                   <label for="inputAlamat">Alamat</label>
@@ -127,6 +139,13 @@ if (isset($_POST['Submit'])) {
 
   </main>
 
+  <!-- SCRIPT SELECT OPTION DENGAN SEARCHING -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
+  <script>
+		$("#select").select2();
+	</script>>
+  
   <!-- JAVASCRIPT FILES -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
