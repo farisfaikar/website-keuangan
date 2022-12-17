@@ -64,6 +64,9 @@ while ($data = mysqli_fetch_array($result)) {
     <link href="../../css/templatemo-kind-heart-charity.css" rel="stylesheet">
 
     <link rel="icon" href="../../images/icons/scholarship.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css">
+
     <!--
 
     TemplateMo 581 Kind Heart Charity
@@ -133,7 +136,15 @@ while ($data = mysqli_fetch_array($result)) {
                                 </div>
                                 <div class="form-group" style="margin-bottom: 1em;">
                                     <label>Prodi</label>
-                                    <input type="text" class="form-control" placeholder="Masukkan Prodi" name="prodi" required value="<?php echo $prodi; ?>">
+                                    <select  id="select" class="form-select" aria-label="Default select example" name="prodi">
+                                        <?php echo '<option value="' . $prodi . '">' . $prodi . '</option>' ?>
+                                        <?php 
+                                            require 'daftar_prodi.php';
+                                            for ($i = 0; $i < count($daftarProdi); $i++) {
+                                            echo '<option value="' . $daftarProdi[$i] . '">' . $daftarProdi[$i] . '</option>';
+                                            } 
+                                        ?>
+                                    </select>
                                 </div>
                                 <div class="form-group" style="margin-bottom: 1em;">
                                     <label>Angkatan</label>
@@ -160,6 +171,13 @@ while ($data = mysqli_fetch_array($result)) {
 
     </main>
 
+    <!-- SCRIPT SELECT OPTION DENGAN SEARCHING -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
+    <script>
+		$("#select").select2();
+	</script>>
+    
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
