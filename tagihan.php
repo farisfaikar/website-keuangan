@@ -111,7 +111,7 @@
                                             echo "<td>" . $data['kode_golongan'] . "</td>";
                                             echo "<td>
                                                 <a href='src/tagihan/edit_tagihan.php?nim=$data[nim]' class='btn btn-warning btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-pencil-square'> Edit</i></a>
-                                                <a href='src/tagihan/delete_tagihan.php?nim=$data[nim]' class='btn btn-danger btn-sm' style='font-weight: 600; margin-right: 10px;'><i class='bi bi-trash'> Delete</i></a>
+                                                <a href='?hapus=$data[nim]' value='hapus' class='btn btn-danger btn-sm' style='font-weight: 600; margin-right: 10px; onclick=\"return confirm('Apakah Anda yakin ingin menghapus data ini?');\"'><i class='bi bi-trash'> Delete</i></a>
                                                 </td>";
                                             echo "</tr>";
                                             $no++;
@@ -119,6 +119,18 @@
                                         ?>
                                     </tbody>
                                 </table>
+                                <?php
+                                if (isset($_GET['hapus'])) {
+                                    $nim = $_GET['hapus'];
+                                    $query = "DELETE FROM tbl_tagihan WHERE nim='$nim'";
+                                    $hasil = mysqli_query($koneksi, $query);
+                                    if ($hasil) {
+                                        echo "<script>alert('Data Berhasil Dihapus');window.location='tagihan.php';</script>";
+                                    } else {
+                                        echo "<script>alert('Data Gagal Dihapus');window.location='tagihan.php';</script>";
+                                    }
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>
